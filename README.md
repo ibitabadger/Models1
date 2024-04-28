@@ -1,10 +1,21 @@
-# Example train and predict scripts with sklearn models
+# Modelos I - Proyecto
+| Nombre | Cédula | Programa |
+|----------|----------|----------|
+| Andrea Sánchez Castrillón| 1001420939 | Ingeniería de sistemas   |
+| Alejandro Vargas Ocampo   | 1088298091   | Ingeniería de sistemas   |
+### Fuente del challenge:
+Predicting molecular properties. 
+https://www.kaggle.com/competitions/champs-scalar-coupling/code
 
-## How to use
+El notebook no requiere ningún elemento adicional, únicamente se deben ejecutar TODAS las lineas de código en el orden en que están.
 
-1. Run the notebook `01 - generate data and model` to generate sample train and test data, and see how models are stored and retrieved
 
-2. Run the notebook `02 - run scripts` to see how scripts are run
+## Fase-2
+1. Download train.csv from here, isn't appear because is too large.
+
+2. Run the notebook `01 - generate data and model` to generate sample train and test data, and see how models are stored and retrieved
+
+3. Run the notebook `02 - run scripts` to see how scripts are run
 
 ## Suggestion
 
