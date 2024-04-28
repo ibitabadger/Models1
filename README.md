@@ -6,6 +6,7 @@
 ### Fuente del challenge:
 Predicting molecular properties. 
 https://www.kaggle.com/competitions/champs-scalar-coupling/code
+## Fase-1
 The notebook does not require any additional elements, just ALL the lines of code must be executed in the order in which they are.
 
 
