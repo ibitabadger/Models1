@@ -27,7 +27,7 @@ if not os.path.isfile(input_file):
     
     
 logger.info("loading input data")
-Xts = pd.read_csv(input_file).values[:,:2]
+Xts = pd.read_csv(input_file).values[:,:5]
 
 
 logger.info("loading model")
@@ -39,4 +39,3 @@ preds = m.predict(Xts)
 
 logger.info(f"saving predictions to {predictions_file}")
 pd.DataFrame(preds.reshape(-1,1), columns=['preds']).to_csv(predictions_file, index=False)
-
