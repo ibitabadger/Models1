@@ -6,19 +6,13 @@
 ### Fuente del challenge:
 Predicting molecular properties. 
 https://www.kaggle.com/competitions/champs-scalar-coupling/code
-
-El notebook no requiere ningún elemento adicional, únicamente se deben ejecutar TODAS las lineas de código en el orden en que están.
+The notebook does not require any additional elements, just ALL the lines of code must be executed in the order in which they are.
 
 
 ## Fase-2
-1. Download train.csv from here, isn't appear because is too large.
 
-2. Run the notebook `01 - generate data and model` to generate sample train and test data, and see how models are stored and retrieved
+1. Download train.csv from here: https://drive.google.com/uc?id=1cFjgpNoWLIFtvfBKqsxeZ_vWNeuelhwh this one doesn't appear because is too large.
 
-3. Run the notebook `02 - run scripts` to see how scripts are run
+3. Run the notebook `01 - generate data and model` to generate sample train and test data, and see how models are stored and retrieved
 
-## Suggestion
-
-- inspect the data files generated
-- inspect the scripts under `scripts`
-- run the scripts from the command line
+4. Run the notebook `02 - run scripts` to see how scripts are run
