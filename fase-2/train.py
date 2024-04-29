@@ -8,9 +8,12 @@ import pickle
 from sklearn.metrics import mean_absolute_error
 from sklearn.model_selection import train_test_split
 
-
+test_input_file  = 'test_data_input.csv'
+test_target_file = 'test_data_target.csv'
 parser = argparse.ArgumentParser()
 parser.add_argument('--data_file', required=True, type=str, help='a csv file with train data')
+parser.add_argument('--test_data_input', required=True, type=str, help='a csv file with input data')
+parser.add_argument('--test_data_target', required=True, type=str, help='a csv file with target data')
 parser.add_argument('--model_file', required=True, type=str, help='where the trained model will be stored')
 parser.add_argument('--overwrite_model', default=False, action='store_true', help='if sets overwrites the model file if it exists')
 
@@ -18,6 +21,8 @@ args = parser.parse_args()
 
 model_file = args.model_file
 data_file  = args.data_file
+test_data_input = args.test_data_input
+test_data_target = args.test_data_target
 overwrite = args.overwrite_model
 
 if os.path.isfile(model_file):
@@ -28,9 +33,8 @@ if os.path.isfile(model_file):
         exit(-1)
 
 logger.info("loading train data")
-z = pd.read_csv(data_file).values
-X = z[:,:5]
-y = z[:,-1]
+X = pd.read_csv('test_data_input.csv').values
+y =  pd.read_csv('test_data_target.csv').values
 
 X_train, X_test, y_train,y_test = train_test_split(X, y, test_size=0.2, random_state=128)
 
